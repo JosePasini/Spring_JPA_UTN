@@ -24,7 +24,7 @@ public class PersistenceApp {
 			//Comienza la transacción
 			em.getTransaction().begin();
 
-			/*
+			
 			Factura factura1 = new Factura();
 			factura1.setNumero(12);
 			factura1.setFecha("04/07/1995");
@@ -75,9 +75,6 @@ public class PersistenceApp {
 			factura1.setTotal(320);
 			
 			em.persist(factura1);
-			
-			
-			*/
 			
 			
 			//Limpiamos la conexión
