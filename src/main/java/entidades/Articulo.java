@@ -20,11 +20,16 @@ import lombok.*;
 
 @Entity
 @Table(name = "articulo")
+
+//   ******* @Data ******** reemplaza "Getters, Setters, ToString y HashCode"
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
+@ToString
+@EqualsAndHashCode
+
 public class Articulo implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -58,7 +63,6 @@ public class Articulo implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
 	
 	@Column(name = "precio")
 	@NonNull private int precio;
